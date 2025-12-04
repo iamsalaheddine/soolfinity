@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Opportunities - Soolfinity HUB</title>
+    <link rel="icon" type="image/svg+xml" href="logo1.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Specific styles for hiring page */
+        .job-board {
+            padding: 120px 2rem 60px;
+            min-height: 100vh;
+        }
+
+        .page-header {
+            text-align: left;
+            margin-bottom: 2.5rem;
+            padding-left: 0;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+            background: linear-gradient(90deg, #3A4DBD 0%, #394798 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .job-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding-bottom: 4rem;
+        }
+
+        .job-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(230, 230, 255, 0.8);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .job-role {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1a2b8c;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+
+        .job-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .job-description {
+            color: #33469E;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .apply-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2563eb;
+            font-weight: 600;
+            text-decoration: none;
+            transition: gap 0.2s;
+        }
+
+        .apply-link:hover {
+            gap: 0.8rem;
+        }
+
+        /* Hide scrollbar for clean look */
+        .main-content::-webkit-scrollbar {
+            display: none;
+        }
+        .main-content {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="watermark-text">CAREERS</div>
+    </div>
+    
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="soollogo.svg" alt="Soolfinity HUB">
+            </a>
+            <!-- Removed hiring badge since we are on the hiring page -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html#contact">Join Team</a></li>
+                    <li><a href="index.html#contact">Sell or collaborate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container job-board">
+            <div class="page-header reveal-text">
+                <h1>Join Our Team</h1>
+                <p class="hero-sub" style="margin-bottom: 0;">Build the future of digital experiences with us.</p>
+            </div>
+
+            <div class="job-grid reveal-group">
+                <!-- Job Post 1 -->
+                <div class="job-card delay-100">
+                    <div class="job-role">Senior UI/UX Designer</div>
+                    <div class="job-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Remote</span>
+                        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+                    </div>
+                    <p class="job-description">We're looking for a visionary designer to craft intuitive and beautiful digital interfaces. You'll lead design initiatives from concept to final polish.</p>
+                    <a href="mailto:jobs@soolfinity.com?subject=Application: Senior UI/UX Designer" class="apply-link">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Job Post 2 -->
+                <div class="job-card delay-200">
+                    <div class="job-role">Frontend Engineer</div>
+                    <div class="job-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Remote</span>
+                        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+                    </div>
+                    <p class="job-description">Expert in React, Vue, or modern web frameworks? Join us to build responsive, high-performance web applications with clean code.</p>
+                    <a href="mailto:jobs@soolfinity.com?subject=Application: Frontend Engineer" class="apply-link">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Job Post 3 -->
+                <div class="job-card delay-300">
+                    <div class="job-role">Product Manager</div>
+                    <div class="job-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Hybrid</span>
+                        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+                    </div>
+                    <p class="job-description">Bridge the gap between technical teams and business goals. We need someone who can define product vision and drive execution.</p>
+                    <a href="mailto:jobs@soolfinity.com?subject=Application: Product Manager" class="apply-link">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                 <!-- Job Post 4 -->
+                 <div class="job-card delay-400">
+                    <div class="job-role">Growth Marketer</div>
+                    <div class="job-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Remote</span>
+                        <span><i class="fa-solid fa-clock"></i> Contract</span>
+                    </div>
+                    <p class="job-description">Help us reach new audiences. Experience in B2B marketing, SEO, and content strategy is a plus.</p>
+                    <a href="mailto:jobs@soolfinity.com?subject=Application: Growth Marketer" class="apply-link">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="copyright">
+                    &copy; 2025 Soolfinity by Sooltr.
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Scroll to top on page load/reload
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+
+        // Premium Scroll Animation Observer
+        const observerOptions = {
+            root: null,
+            threshold: 0.15, 
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    if (entry.target.classList.contains('reveal-group')) {
+                        const children = entry.target.children;
+                        Array.from(children).forEach((child, index) => {
+                            setTimeout(() => {
+                                child.classList.add('visible');
+                            }, index * 100);
+                        });
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-text, .reveal-group').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+
